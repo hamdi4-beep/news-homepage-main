@@ -1,0 +1,31 @@
+@use './variables' as *;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $ff-base;
+    font-size: $fs-base;
+    min-height: 100vh;
+}
+
+picture,
+img {
+    display: block;
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    font: inherit;
+    border: none;
+    background: none;
+}

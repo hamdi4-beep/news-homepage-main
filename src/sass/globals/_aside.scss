@@ -1,0 +1,30 @@
+@use './variables' as *;
+
+aside {
+    background-color: $clr-dark-blue;
+    color: $clr-off-white;
+    padding: 1.6em;
+    margin-block: 4em;
+
+    h2 {
+        color: $clr-soft-orange;
+        margin-bottom: 1.3em;
+    }
+
+    h3 {
+        margin-bottom: .6em;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    .news {
+
+        &:not(:last-of-type) {
+            border-bottom: 1px solid;
+            padding-bottom: 2em;
+            margin-bottom: 2em;
+        }
+    }
+}

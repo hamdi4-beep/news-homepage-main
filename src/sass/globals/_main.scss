@@ -1,0 +1,55 @@
+@use './variables' as *;
+
+main {
+    padding: 1em;
+
+    h1 {
+        font-size: 2.7rem;
+        margin-block: .3em;
+    }
+
+    p {
+        line-height: 1.7;
+        margin-bottom: 1em;
+    }
+
+    .cta-btn {
+        background-color: $clr-soft-red;
+        padding: .8em 1.8em;
+        margin-top: 1.3em;
+        color: $clr-off-white;
+        text-transform: uppercase;
+        letter-spacing: .3em;
+        font-weight: bold;
+    }
+
+    .category {
+        display: flex;
+        gap: 1.3em;
+
+        span {
+            font-size: 2em;
+            font-weight: $fw-800;
+            color: $clr-grayish-blue;
+        }
+
+        h3 {
+            font-weight: $fw-800;
+            margin-block: .7em;
+        }
+
+        img {
+            height: 100%;
+        }
+
+        .content {
+            flex-grow: 1;
+            flex-shrink: 0;
+            flex-basis: 60%;
+        }
+
+        .thumbnail-img:not(:last-of-type) {
+            margin-bottom: 2.4em;
+        }
+    }
+}

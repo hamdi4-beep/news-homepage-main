@@ -1,0 +1,33 @@
+header {
+    margin-bottom: 1em;
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1em;
+
+        .nav-items {
+            position: fixed;
+            top: 0;
+            right: 0;
+            background-color: white;
+            height: 100%;
+            padding: 2em 1em;
+            z-index: 999;
+
+            .close-menu {
+                margin-bottom: 3em;
+
+                img {
+                    margin-left: auto;
+                }
+            }
+
+            li {
+                margin-bottom: 1.3em;
+                margin-right: 4em;
+            }
+        }
+    }
+}
