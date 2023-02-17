@@ -31,6 +31,10 @@ header {
                 margin-bottom: 1.3em;
                 margin-right: 4em;
                 padding-right: 4em;
+
+                &:hover {
+                    color: $clr-soft-orange;
+                }
             }
         }
     }

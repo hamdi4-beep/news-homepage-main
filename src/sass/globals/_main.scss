@@ -21,6 +21,10 @@ main {
         text-transform: uppercase;
         letter-spacing: .3em;
         font-weight: bold;
+
+        &:hover {
+            background-color: $clr-dark-blue;
+        }
     }
 
     .category {
