@@ -1,3 +1,5 @@
+@use './variables' as *;
+
 header {
     margin-bottom: 1em;
 
@@ -13,7 +15,7 @@ header {
             right: 0;
             background-color: white;
             height: 100%;
-            padding: 2em 1em;
+            padding: 2em 1.4em;
             z-index: 999;
 
             .close-menu {
@@ -25,9 +27,10 @@ header {
             }
 
             li {
+                font-weight: $fw-700;
                 margin-bottom: 1.3em;
                 margin-right: 4em;
-                padding-right: 3em;
+                padding-right: 4em;
             }
         }
     }
