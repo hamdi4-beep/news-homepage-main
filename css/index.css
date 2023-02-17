@@ -37,6 +37,9 @@ header nav {
   justify-content: space-between;
   padding: 1em;
 }
+header nav .nav-icon {
+  cursor: pointer;
+}
 header nav .nav-items {
   position: fixed;
   top: 0;
@@ -51,6 +54,7 @@ header nav .nav-items .close-menu {
 }
 header nav .nav-items .close-menu img {
   margin-left: auto;
+  cursor: pointer;
 }
 header nav .nav-items li {
   font-weight: 700;
@@ -84,6 +88,7 @@ main .cta-btn {
 }
 main .cta-btn:hover {
   background-color: hsl(240deg, 100%, 5%);
+  cursor: pointer;
 }
 main .category {
   display: flex;
@@ -127,6 +132,7 @@ aside h3 {
 }
 aside h3:hover {
   color: hsl(35deg, 77%, 62%);
+  cursor: pointer;
 }
 aside p {
   margin: 0;
