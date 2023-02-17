@@ -1,6 +1,7 @@
 @use './variables' as *;
 
 header {
+    padding-top: 1.3em;
     margin-bottom: 1em;
 
     nav {
@@ -39,6 +40,7 @@ header {
 
                 &:hover {
                     color: $clr-soft-orange;
+                    cursor: pointer;
                 }
             }
         }

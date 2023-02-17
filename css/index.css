@@ -29,6 +29,7 @@ button {
 }
 
 header {
+  padding-top: 1.3em;
   margin-bottom: 1em;
 }
 header nav {
@@ -64,6 +65,7 @@ header nav .nav-items li {
 }
 header nav .nav-items li:hover {
   color: hsl(35deg, 77%, 62%);
+  cursor: pointer;
 }
 
 main {
