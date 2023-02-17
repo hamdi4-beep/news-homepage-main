@@ -41,6 +41,11 @@ main {
         h3 {
             font-weight: $fw-800;
             margin-block: .7em;
+
+            &:hover {
+                color: $clr-soft-red;
+                cursor: pointer;
+            }
         }
 
         img {

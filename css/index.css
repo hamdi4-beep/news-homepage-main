@@ -9,6 +9,8 @@
 body {
   font-family: Inter;
   font-size: 15px;
+  width: 100%;
+  margin: 0 auto !important;
   min-height: 100vh;
 }
 
@@ -104,6 +106,10 @@ main .category span {
 main .category h3 {
   font-weight: 800;
   margin-block: 0.7em;
+}
+main .category h3:hover {
+  color: hsl(5deg, 85%, 63%);
+  cursor: pointer;
 }
 main .category img {
   height: 100%;
