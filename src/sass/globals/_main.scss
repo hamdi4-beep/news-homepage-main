@@ -13,6 +13,10 @@ main {
         margin-bottom: 1em;
     }
 
+    .hero-img {
+        margin-inline: auto;
+    }
+
     .cta-btn {
         background-color: $clr-soft-red;
         padding: .8em 1.8em;

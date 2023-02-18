@@ -12,7 +12,6 @@ body {
   font-size: 15px;
   width: 100%;
   margin: 0 auto !important;
-  min-height: 100vh;
 }
 
 picture,
@@ -81,6 +80,9 @@ main h1 {
 main p {
   line-height: 1.7;
   margin-bottom: 1em;
+}
+main .hero-img {
+  margin-inline: auto;
 }
 main .cta-btn {
   background-color: hsl(5deg, 85%, 63%);
