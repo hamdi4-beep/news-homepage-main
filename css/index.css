@@ -57,7 +57,7 @@ header nav .nav-items .close-menu img {
   cursor: pointer;
 }
 header nav .nav-items li {
-  font-weight: 700;
+  font-weight: 400;
   margin-bottom: 1.3em;
   margin-right: 4em;
   padding-right: 4em;
@@ -72,14 +72,14 @@ main {
 }
 main h1 {
   font-size: 2.7rem;
-  margin-block: 0.6em;
+  margin-bottom: 0.6em;
 }
 main p {
   line-height: 1.7;
   margin-bottom: 1em;
 }
-main .hero-img {
-  margin-inline: auto;
+main .headline {
+  padding-top: 1.5em;
 }
 main .cta-btn {
   background-color: hsl(5deg, 85%, 63%);
@@ -96,7 +96,7 @@ main .cta-btn:hover {
 }
 main .category {
   display: flex;
-  gap: 1.3em;
+  gap: 1rem;
 }
 main .category span {
   font-size: 2em;
@@ -151,6 +151,49 @@ aside .news:not(:last-of-type) {
   margin-bottom: 2em;
 }
 
+@media (min-width: 768px) {
+  body {
+    padding-inline: 3.2em;
+  }
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  main aside {
+    margin: 0;
+  }
+  .first {
+    grid-column: span 2;
+  }
+  .first .headline {
+    display: flex;
+    gap: 1rem;
+  }
+  .nav-icon {
+    display: none;
+  }
+  nav div.nav-items {
+    position: static;
+    display: block;
+    padding: 0;
+  }
+  nav div.nav-items ul {
+    display: flex;
+    gap: 2rem;
+  }
+  nav div.nav-items ul li {
+    padding: 0;
+    margin: 0;
+  }
+  nav div.nav-items .close-menu {
+    display: none;
+  }
+  .categories {
+    display: flex;
+    grid-column: span 3;
+  }
+}
 .overlay:after {
   content: "";
   display: block;
