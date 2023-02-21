@@ -1,55 +1,74 @@
-@media (min-width: 768px) {
-
+@media (max-width: 768px) {
     body {
-        padding-inline: 3.2em;
+        padding: 1em !important;
     }
 
-    main {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1.5rem;
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-block: 1.5em;
 
-        aside {
-            margin: 0;
-        }
-    }
+        nav {
+            position: fixed;
+            top: 0;
+            right: 0;
+            display: none;
+            background-color: white;
+            height: 100%;
+            padding: 2em 1.4em;
+            z-index: 999;
 
-    .first {
-        grid-column: span 2;
+            .close-menu {
+                margin-bottom: 2em;
+                text-align: right;
+                display: block;
 
-        .headline {
-            display: flex;
-            gap: 1rem;
-        }
-    }
-
-    .nav-icon {
-        display: none;
-    }
-
-    nav div.nav-items {
-        position: static;
-        display: block;
-        padding: 0;
-        
-        ul {
-            display: flex;
-            gap: 2rem;
-
-            li {
-                padding: 0;
-                margin: 0;
+                img {
+                    display: inline;
+                    cursor: pointer;
+                }
             }
         }
 
-        .close-menu {
-            display: none;
+        ul {
+            display: block;
+
+            li {
+                margin-bottom: 1.3em;
+                margin-right: 4em;
+                padding-right: 4em;
+            }
+        }
+        
+        .nav-icon {
+            display: block;
+            cursor: pointer;
+        }
+    }
+    
+    body main {
+
+        &,
+        .headline {
+            display: block;
+
+            .content p {
+                margin-block: 1em;
+            }
+
+            .cta-btn {
+                margin-top: 1.4em;
+                margin-bottom: 4em;
+            }
         }
 
-    }
+        aside {
+            margin-bottom: 4em;
+        }
 
-    .categories {
-        display: flex;
-        grid-column: span 3;
+        .content {
+            padding: 0 !important;
+        }
     }
 }

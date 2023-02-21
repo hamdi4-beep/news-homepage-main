@@ -1,48 +1,24 @@
 @use './variables' as *;
 
 header {
-    padding-top: 1.3em;
-    margin-bottom: 1em;
+    display: flex;
+    padding-block: 2em;
 
     nav {
+        margin-left: auto;
+
+        .close-menu {
+            display: none;
+        }
+    }
+
+    ul {
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 1em;
+        gap: 2rem;
+    }
 
-        .nav-icon {
-            cursor: pointer;
-        }
-
-        .nav-items {
-            position: fixed;
-            top: 0;
-            right: 0;
-            background-color: white;
-            height: 100%;
-            padding: 2em 1.4em;
-            z-index: 999;
-
-            .close-menu {
-                margin-bottom: 3em;
-
-                img {
-                    margin-left: auto;
-                    cursor: pointer;
-                }
-            }
-
-            li {
-                font-weight: $fw-400;
-                margin-bottom: 1.3em;
-                margin-right: 4em;
-                padding-right: 4em;
-
-                &:hover {
-                    color: $clr-soft-orange;
-                    cursor: pointer;
-                }
-            }
-        }
+    ul li:hover {
+        cursor: pointer;
+        color: $clr-soft-orange;
     }
 }

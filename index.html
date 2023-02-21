@@ -1,135 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./dist/script.js" defer></script>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="./css/index.css">
-
-  <title>Frontend Mentor | News homepage</title>
-
-  <script src="./dist/script.js" defer></script>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; margin-bottom: 1em; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
-  </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+    </style>
 </head>
 <body>
-  <header>
-    <nav>
-      <div class="logo">
-        <img src="./assets/images/logo.svg" alt="the letter W">
-      </div>
-
-      <div class="nav-icon">
-        <img src="./assets/images/icon-menu.svg" alt="">
-      </div>
-
-      <div class="nav-items hidden">
-        <div class="close-menu">
-          <img src="./assets/images/icon-menu-close.svg" alt="">
+    <header>
+        <div class="logo">
+            <img src="https://hamdi4-beep.github.io/news-homepage-main/assets/images/logo.svg" alt="logo">
         </div>
 
-        <ul>
-          <li>Home</li>
-          <li>New</li>
-          <li>Popular</li>
-          <li>Trending</li>
-          <li>Categories</li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-    <section class="first">
-      <div class="hero-img">
-        <picture>
-          <source srcset="./assets/images/image-web-3-desktop.jpg" media="(min-width: 768px)" />
-          <img src="./assets/images/image-web-3-mobile.jpg" alt="">
-        </picture>
-      </div>
-
-      <div class="headline">
-        <h1>The Bright Future of Web 3.0?</h1>
-
-        <article>
-          <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people.
-            But is it really fulfilling its promise?</p>
-            <button class="cta-btn">Read More</button>
-        </article>
-      </div>
-    </section>
-
-    <section class="news-container">
-      <aside>
-        <article>
-          <h2>New</h2>
-          <div class="news">
-            <h3>Hydrogen VS Electric Cars</h3>
-            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
-          </div>
-          <div class="news">
-            <h3>The Downsides of AI Artistry</h3>
-            <p>What are the possible adverse effects of on-demand AI image generation?</p>
-          </div>
-          <div class="news">
-            <h3>Is VC Funding Drying Up?</h3>
-            <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
-          </div>
-        </article>
-      </aside>
-    </section>
-
-    <div class="categories">
-      <div class="retro-section category">
-        <div class="thumbnail-img">
-          <img src="./assets/images/image-retro-pcs.jpg" alt="">
+        <div class="nav-icon hidden">
+            <img src="./assets/images/icon-menu.svg" alt="">
         </div>
 
-        <div class="content">
-          <span>01</span>
-          <h3>Reviving Retro PCs</h3>
-          <p>What happens when old PCs are given modern upgrades?</p>
-        </div>
-      </div>
+        <nav>
+            <div class="close-menu">
+                <img src="./assets/images/icon-menu-close.svg" alt="">
+            </div>
 
-      <div class="laptop-section category">
-        <div class="thumbnail-img">
-          <img src="./assets/images/image-top-laptops.jpg" alt="">
+            <ul>
+                <li>Home</li>
+                <li>New</li>
+                <li>Popular</li>
+                <li>Trendy</li>
+                <li>Categories</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="main-section">
+            <div class="cover-img">
+                <picture>
+                    <source srcset="./assets/images/image-web-3-desktop.jpg" media="(min-width: 768px)" />
+                    <img src="./assets/images/image-web-3-mobile.jpg" alt="">
+                </picture>
+            </div>
+
+            <div class="headline">
+                <h1>The Bright Future of Web 3.0?</h1>
+
+                <div class="content">
+                    <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+                    <button class="cta-btn">Read More</button>
+                </div>
+            </div>
+        </section>
+
+        <aside>
+            <h2>New</h2>
+
+            <div class="news">
+                <h3>Hydrogen VS Electric Cars</h3>
+                <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+            </div>
+
+            <div class="news">
+                <h3>The Downsides of AI Artistry</h3>
+                <p>What are the possible adverse effects of on-demand AI image generation?</p>
+            </div>
+
+            <div class="news">
+                <h3>Is VC Funding Drying Up?</h3>
+                <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+            </div>
+        </aside>
+
+        <div class="category">
+            <div class="thumbnail-img">
+                <img src="https://hamdi4-beep.github.io/news-homepage-main/assets/images/image-retro-pcs.jpg" alt="">
+            </div>
+
+            <div class="content">
+                <span>01</span>
+                <h3>Reviving Retro PCs</h3>
+                <p>What happens when old PCs are given modern upgrades?</p>
+            </div>
         </div>
 
-        <div class="content">
-          <span>02</span>
-          <h3>Top 10 Laptops of 2022</h3>
-          <p>Our best picks for various needs and budgets.</p>
-        </div>
-      </div>
+        <div class="category">
+            <div class="thumbnail-img">
+                <img src="https://hamdi4-beep.github.io/news-homepage-main/assets/images/image-top-laptops.jpg" alt="">
+            </div>
 
-      <div class="gaming-section category">
-        <div class="thumbnail-img">
-          <img src="./assets/images/image-gaming-growth.jpg" alt="">
+            <div class="content">
+                <span>02</span>
+                <h3>Top 10 Laptops of 2022</h3>
+                <p>Our best picks for various needs and budgets.</p>
+            </div>
         </div>
 
-        <div class="content">
-          <span>03</span>
-          <h3>The Growth of Gaming</h3>
-          <p>How the pandemic has sparked fresh opportunities.</p>
-        </div>
-      </div>
-    </div>
-  </main>
+        <div class="category">
+            <div class="thumbnail-img">
+                <img src="https://hamdi4-beep.github.io/news-homepage-main/assets/images/image-gaming-growth.jpg" alt="">
+            </div>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Hamdi Kamel</a>.
-  </div>
+            <div class="content">
+                <span>03</span>
+                <h3>The Growth of Gaming</h3>
+                <p>How the pandemic has sparked fresh opportunities.</p>
+            </div>
+        </div>
+    </main>
 </body>
 </html>

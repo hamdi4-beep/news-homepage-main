@@ -1,13 +1,22 @@
 @forward 'globals';
 
-.overlay:after {
-    content: '';
-    display: block;
-    position: fixed;
-    inset: 0;
-    background-color: rgba(0 0 0 / .5);
+body {
+    padding: 2em;
+    padding-inline: 6em;
+
+    &.overlay::after {
+        content: '';
+        display: block;
+        position: fixed;
+        background-color: rgba(0 0 0 / .5);
+        inset: 0;
+    }
 }
 
 .hidden {
     display: none;
+}
+
+.show {
+    display: block;
 }
