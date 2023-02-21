@@ -18,7 +18,6 @@ main {
         }
 
         .news {
-            margin-bottom: 2em;
 
             h3:hover {
                 color: $clr-soft-orange;
@@ -28,6 +27,7 @@ main {
             &:not(:last-of-type) {
                 border-bottom: 1px solid $clr-dark-grayish-blue;
                 padding-bottom: 2em;
+                margin-bottom: 2em;
             }
 
             h3 {

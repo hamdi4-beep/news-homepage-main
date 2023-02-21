@@ -62,9 +62,6 @@ main aside h2 {
   font-size: 1.7rem;
   margin-bottom: 1em;
 }
-main aside .news {
-  margin-bottom: 2em;
-}
 main aside .news h3:hover {
   color: hsl(35deg, 77%, 62%);
   cursor: pointer;
@@ -72,6 +69,7 @@ main aside .news h3:hover {
 main aside .news:not(:last-of-type) {
   border-bottom: 1px solid hsl(236deg, 13%, 42%);
   padding-bottom: 2em;
+  margin-bottom: 2em;
 }
 main aside .news h3 {
   margin-bottom: 0.5em;
