@@ -11,4 +11,3 @@ closeBtn === null || closeBtn === void 0 ? void 0 : closeBtn.addEventListener('p
     navItems.classList.remove('show');
     body.classList.remove('overlay');
 });
-console.log(navItems);

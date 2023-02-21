@@ -48,7 +48,8 @@ header ul li:hover {
 
 main {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-auto-flow: row;
   gap: 2em;
 }
 main aside {
@@ -94,6 +95,9 @@ main .headline .content {
   display: flex;
   flex-direction: column;
 }
+main .headline .content p {
+  margin-bottom: 1em;
+}
 main .headline .cta-btn {
   background-color: hsl(5deg, 85%, 63%);
   padding: 0.8em 1.8em;
@@ -110,7 +114,6 @@ main .headline .cta-btn:hover {
 }
 main .category {
   display: flex;
-  align-items: flex-start;
   gap: 1rem;
   margin-top: 2em;
 }
@@ -192,9 +195,14 @@ body main .headline .cta-btn {
     padding: 0 !important;
   }
 }
+@media (max-width: 1137px) {
+  aside {
+    grid-column: span 2;
+  }
+}
 body {
   padding: 2em;
-  padding-inline: 6em;
+  padding-inline: 5vw;
 }
 body.overlay::after {
   content: "";

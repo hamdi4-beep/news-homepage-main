@@ -72,3 +72,11 @@
         }
     }
 }
+
+@media (max-width: 1137px) {
+
+    aside {
+        grid-column: span 2;
+    }
+
+}
